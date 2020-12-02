@@ -22,6 +22,7 @@ module "eb_geolocator_dev_environments" {
 ```
 
 * Set `settings =[]` for environments that are copies of one another eg: dev1 dev2; Create a separate 
-  module for say production environments.
-* Set the DB password in *.auto.tfvars
+  module for say production environments.  
+* Databases are created per environment.  
+* Set the DB password in *.auto.tfvars.  
 * The settings for the environment depend on the solution stack see [aws docs](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/command-options-specific.html)

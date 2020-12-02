@@ -14,10 +14,6 @@ module "eb_geolocator_application" {
   source = "./.."
   application_description = "Geolocator uses a requests IP address to identify the clients location"
   application_name = "Geolocator"
-  db_engine = "mysql"
-  db_name = "geolocator"
-  db_version = "8.0"
-  db_password = var.db_password
 }
 
 module "eb_geolocator_dev_environments" {
